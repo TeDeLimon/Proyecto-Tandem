@@ -15,6 +15,7 @@ Es todo un orgullo poder formar parte de este proyecto así que sentíos felices
   - [Entorno de trabajo](#entorno-de-trabajo)
   - [Herramientas de desarrollo:](#herramientas-de-desarrollo)
   - [Utilidades](#utilidades)
+  - [Configuración entorno](#configuración-entorno)
   - [FAQ](#faq)
   - [Contributing](#contributing)
   - [License](#license)
@@ -86,6 +87,12 @@ Estos programas nos brindarán un extra de productividad o de resolución de pro
 
 - Power toys. https://learn.microsoft.com/es-es/windows/powertoys/install
 - Anydesk. https://anydesk.com/es/downloads/windows
+
+## Configuración entorno
+
+- Instalamos la última versión de xaamp. 
+- Configuramos las variables de entorno .
+- Variables de entorno
 
 ## FAQ
 
