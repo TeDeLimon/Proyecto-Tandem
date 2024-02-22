@@ -19,7 +19,7 @@
 
   <main>
     <!-- Tabla -->
-    <div id="tabla" class="container mt-3 overflow-x-auto">
+    <section id="tabla" class="container mt-3 overflow-x-auto">
       <h2 class="h2 text-center fw-bold text-primary-emphasis">Tabla <i class="bi bi-table"></i></h2>
       <table class="table table-dark table-hover">
         <thead>
@@ -92,31 +92,33 @@
           </tr>
         </tbody>
       </table>
-    </div>
+    </section>
 
     <!-- Formulario -->
-    <form class="container mt-3 overflow-x-auto">
-      <h2 class="h2 text-center fw-bold text-primary-emphasis">Formulario <i class="bi bi-card-heading"></i></h2>
-      <div class="row">
-        <div class="col">
-          <label for="exampleFormControlInput1" class="form-label">Nombre</label>
-          <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
+    <section id="formulario">
+      <form class="container mt-3 overflow-x-auto">
+        <h2 class="h2 text-center fw-bold text-primary-emphasis">Formulario <i class="bi bi-card-heading"></i></h2>
+        <div class="row">
+          <div class="col">
+            <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+            <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
+          </div>
+          <div class="col">
+            <label for="exampleFormControlInput1" class="form-label">Apellido</label>
+            <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido">
+          </div>
         </div>
-        <div class="col">
-          <label for="exampleFormControlInput1" class="form-label">Apellido</label>
-          <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido">
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Dirección de email</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">
         </div>
-      </div>
-      <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Dirección de email</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">
-      </div>
-      <div class="mb-3">
-        <label for="exampleFormControlTextarea1" class="form-label">Comentario</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-      </div>
-      <button type="enviar" class="btn btn-primary">Enviar</button>
-    </form>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Comentario</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <button type="enviar" class="btn btn-primary">Enviar</button>
+      </form>
+    </section>
   </main>
 
   <!-- Bootstrap JavaScript Libraries -->
