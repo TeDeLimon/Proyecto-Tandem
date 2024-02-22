@@ -60,7 +60,7 @@
 </head>
 
 <body>
-  
+
   <header class="container-fluid sticky-top col-12 d-flex justify-content-between border">
 
     <nav class="col-11 d-flex justify-content-between p-2 align-items-center">
@@ -93,21 +93,82 @@
     <a id="sectionTabla"></a>
 
     <!-- Section TABLA -->
-    <!-- Reemplazar los <BR> por la sección/código de la Tabla (puse los br para simular un espacio en blanco) -->
+    <section id="tabla" class="container mt-3 overflow-x-auto">
+      <h2 class="h2 text-center fw-bold text-primary-emphasis">Tabla <i class="bi bi-table"></i></h2>
+      <table class="table table-dark table-hover">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td colspan="2">Larry the Bird</td>
+            <td>@twitter</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td colspan="2">Larry the Bird</td>
+            <td>@twitter</td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td colspan="2">Larry the Bird</td>
+            <td>@twitter</td>
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+            <td>Larry the Bird</td>
+            <td>Thornton</td>
+            <td>@twitter</td>
+          </tr>
+          <tr>
+            <th scope="row">6</th>
+            <td colspan="2">Larry the Bird</td>
+            <td>@twitter</td>
+          </tr>
+          <tr>
+            <th scope="row">7</th>
+            <td colspan="2">Larry the Bird</td>
+            <td>@twitter</td>
+          </tr>
+          <tr>
+            <th scope="row">8</th>
+            <td>Larry the Bird</td>
+            <td>Thornton</td>
+            <td>@twitter</td>
+          </tr>
+          <tr>
+            <th scope="row">9</th>
+            <td colspan="2">Larry the Bird</td>
+            <td>@twitter</td>
+          </tr>
+          <tr>
+            <th scope="row">10</th>
+            <td colspan="2">Larry the Bird</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
 
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+    <!-------------------------------------------------------------->
 
     <a id="sectionGaleria"></a>
     <section class="container">
@@ -131,33 +192,139 @@
       </div>
     </section>
 
+
+    <!-------------------------------------------------------------->
+
+
     <a id="sectionFormulario"></a>
     <!-- Section FORMULARIO -->
 
+    <section id="formulario">
+      <form class="container mt-3 overflow-x-auto">
+        <h2 class="h2 text-center fw-bold text-primary-emphasis">Formulario <i class="bi bi-card-heading"></i></h2>
+        <div class="row">
+          <div class="col">
+            <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+            <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
+          </div>
+          <div class="col">
+            <label for="exampleFormControlInput1" class="form-label">Apellido</label>
+            <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido">
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Dirección de email</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Comentario</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <button type="enviar" class="btn btn-primary">Enviar</button>
+      </form>
+    </section>
 
 
-
-
-
-
+    <!-------------------------------------------------------------->
 
 
     <a id="sectionEjercicio"></a>
     <!-- Section EJERCICIO -->
 
+    <section id="ejercicio" class="container mt-3">
+      <h2 class="h2 text-center fw-bold text-primary-emphasis">Ejercicio <i class="bi bi-keyboard"></i></h2>
+
+      <div class="row p-3">
+        <div class="col-12 col-md-6 col-lg-12 col-xl-4 mb-2 pe-0">
+          <div class="w-100 p-3 text-center fw-semibold bg-success-subtle border border-danger rounded shadow">
+            Bloque 1
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-2 pe-0">
+          <div class="w-100 p-3 text-center fw-semibold bg-success-subtle border border-danger rounded shadow">
+            Bloque 2
+          </div>
+        </div>
+        <div class="col-12 col-md-12 col-lg-6 col-xl-4 mb-2 pe-0">
+          <div class="w-100 p-3 text-center fw-semibold bg-success-subtle border border-danger rounded shadow">
+            Bloque 3
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-6 col-xl-6 mb-2 pe-0">
+          <div class="w-100 p-3 text-center fw-semibold bg-success-subtle border border-danger rounded shadow">
+            Bloque 4
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-6 col-xl-6 mb-2 pe-0">
+          <div class="w-100 p-3 text-center fw-semibold bg-success-subtle border border-danger rounded shadow">
+            Bloque 5
+          </div>
+        </div>
+        <div class="col-12 col-md-12 col-lg-12 col-xl-8 mb-2 pe-0">
+          <div class="w-100 p-3 text-center fw-semibold bg-success-subtle border border-danger rounded shadow">
+            Bloque 6
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 col-xl-4 mb-2 pe-0">
+          <div class="w-100 p-3 text-center fw-semibold bg-success-subtle border border-danger rounded shadow">
+            Bloque 7
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 col-xl-12 mb-2 pe-0">
+          <div class="w-100 p-3 text-center fw-semibold bg-success-subtle border border-danger rounded shadow">
+            Bloque 8
+          </div>
+        </div>
+        <div class="col-12 col-md-12 col-lg-4 col-xl-5 mb-2 pe-0">
+          <div class="w-100 p-3 text-center fw-semibold bg-success-subtle border border-danger rounded shadow">
+            Bloque 9
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-12 col-xl-2 mb-2 pe-0">
+          <div class="w-100 p-3 text-center fw-semibold bg-success-subtle border border-danger rounded shadow">
+            Bloque 10
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-6 col-xl-5 mb-2 pe-0">
+          <div class="w-100 p-3 text-center fw-semibold bg-success-subtle border border-danger rounded shadow">
+            Bloque 11
+          </div>
+        </div>
+        <div class="col-12 col-md-12 col-lg-6 col-xl-12 mb-2 pe-0">
+          <div class="w-100 p-3 text-center fw-semibold bg-success-subtle border border-danger rounded shadow">
+            Bloque 12
+          </div>
+        </div>
+      </div>
+    </section>
 
 
-
-    
-
-
-
+    <!-------------------------------------------------------------->
 
 
   </main>
 
 
   <!-- Aquí abajo del todo iría la sección del <Footer> ( después de cerrar el </main> y antes del último script ) -->
+  <footer class="container d-flex flex-wrap justify-content-center justify-content-sm-between align-items-center py-2 my-4
+        border-top">
+
+    <div class="col-md-4 d-flex align-items-center ms-3 fs-3"><i class="bi bi-bootstrap-fill"
+        style="padding: 10px;"></i>
+      <span class="fs-3 fw-semibold mb-md-0 text-info-emphasis">| 2024 Grupo 1</span>
+      <a href="#" class="fs-4 fw-semibold ms-2 mb-md-0 text-info-emphasis text-decoration-none">
+      </a>
+
+    </div>
+
+    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+      <li class="ms-3 fs-2"> <a class="text-info-emphasis" href="#"> <i class="bi bi-behance"></i> </a> </li>
+      <li class="ms-3 fs-2"> <a class="text-info-emphasis" href="#"> <i class="bi bi-twitter-x"></i></a> </li>
+      <li class="ms-3 fs-2"> <a class="text-info-emphasis" href="#"> <i class="bi bi-linkedin"></i> </a> </li>
+      <li class="ms-3 fs-2"> <a class="text-info-emphasis" href="#"> <i class="bi bi-discord"></i> </a>
+      </li>
+    </ul>
+  </footer>
 
 
 
