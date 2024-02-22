@@ -9,8 +9,11 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.118.2">
-    <title>Dashboard Administración</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <title>Dashboard Administración</title>
+    <!--Link a tablas CSS w3s-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <!-- Librerías CSS -->
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/dashboard/">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
@@ -410,8 +413,130 @@
     </div>
     <ul>
         <li><h6>Informe de producción de coches en 2016:</h6></li>
-        <!--pega aqui la barra de progreso-->
+        <div class="w3-container">
+            <h1>Informe de producción de coches</h1>
+            <p> <strong>Tabla de producción</strong> / informe de coches</p>
+          
+            <div class="w3-light-grey w3-round-xlarge">
+              <div class="w3-container w3-green w3-round-xlarge" style="width:50%">Volvo 50%</div>
+            </div><br>
+          
+            <div class="w3-light-grey w3-round-xlarge">
+              <div class="w3-container w3-red w3-round-xlarge" style="width:25%">BMW 25%</div>
+            </div><br>
+          
+            <div class="w3-light-grey w3-round-xlarge">
+              <div class="w3-container w3-blue w3-round-xlarge" style="width:35%">MERCEDES BENZ 35%</div>
+            </div><br>
+            <div class="w3-light-grey w3-round-xlarge">
+              <div class="w3-container w3-yellow w3-round-xlarge" style="width:45%">AUDI 45%</div>
+            </div><br>
+            <div class="w3-light-grey w3-round-xlarge">
+              <div class="w3-container w3-blue w3-round-xlarge" style="width:60%">TOYOTA 60%</div>
+            </div><br>
+            <div class="w3-light-grey w3-round-xlarge">
+              <div class="w3-container w3-red w3-round-xlarge" style="width:35%">CHEVROLET 35%</div>
+            </div><br>
+            <div class="w3-light-grey w3-round-xlarge">
+              <div class="w3-container w3-green w3-round-xlarge" style="width:80%">TESLA 80%</div>
+            </div>
+          </div>
     </ul>
+    
+        <div
+            class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+            <h1 class="h2">Dashboard</h1>
+            <div class="btn-toolbar mb-2 mb-md-0">
+                <div class="btn-group me-2">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Compartir</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Exportar</button>
+                </div>
+                <button type="button"
+                    class="btn btn-sm btn-outline-secondary dropdown-toggle d-flex align-items-center gap-1">
+                    <svg class="bi">
+                        <use xlink:href="#calendar3" />
+                    </svg>
+                    Semana actual
+                </button>
+            </div>
+        </div>
+
+        <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas>
+    <h2>Section title</h2>
+                <div class="table-responsive small overflow-auto" style="max-height:50vh">
+                    <table class="table table-bordered table-hover table-condensed">
+                        <thead>
+                            <tr>
+                                <th class="text-end" title="Field #1">id</th>
+                                <th title="Field #2">Company Name</th>
+                                <th title="Field #3">IBAN</th>
+                                <th title="Field #4">Email</th>
+                                <th title="Field #5">Currency Code</th>
+                                <th title="Field #6">Time Zone</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td align="right">1</td>
+                                <td>Midel</td>
+                                <td>SM50 X728 6995 447M SPL4 JQFR LEU</td>
+                                <td>ezamora0@addthis.com</td>
+                                <td>CNY</td>
+                                <td>Asia/Chongqing</td>
+                            </tr>
+                            <tr>
+                                <td align="right">2</td>
+                                <td>Gigazoom</td>
+                                <td>CY07 6413 3173 NZIA OTXX KZDN 2ADD</td>
+                                <td>mpedracci1@cam.ac.uk</td>
+                                <td>PLN</td>
+                                <td>Europe/Warsaw</td>
+                            </tr>
+                            <tr>
+                                <td align="right">3</td>
+                                <td>Tavu</td>
+                                <td>GB87 IOOF 4670 2678 2866 93</td>
+                                <td>edronsfield2@creativecommons.org</td>
+                                <td>CNY</td>
+                                <td>Asia/Chongqing</td>
+                            </tr>
+                            <tr>
+                                <td align="right">4</td>
+                                <td>Photobean</td>
+                                <td>GL96 2007 8414 9791 25</td>
+                                <td>llongbone3@imageshack.us</td>
+                                <td>CZK</td>
+                                <td>Europe/Prague</td>
+                            </tr>
+                            <tr>
+                                <td align="right">5</td>
+                                <td>Twiyo</td>
+                                <td>FR29 5414 6422 85CX JHGS IQ6R 028</td>
+                                <td>bmecchi4@e-recht24.de</td>
+                                <td>BRL</td>
+                                <td>America/Sao_Paulo</td>
+                            </tr>
+                            <tr>
+                                <td align="right">6</td>
+                                <td>Meembee</td>
+                                <td>FI77 9956 6980 0304 21</td>
+                                <td>areaney5@house.gov</td>
+                                <td>CNY</td>
+                                <td>Asia/Urumqi</td>
+                            </tr>
+                            <tr>
+                                <td align="right">7</td>
+                                <td>Mydo</td>
+                                <td>CY29 2762 9182 BCV3 X2WZ CFDZ DIOI</td>
+                                <td>dphaup6@quantcast.com</td>
+                                <td>EUR</td>
+                                <td>Europe/Lisbon</td>
+                            </tr>
+                           
+                     
+                        </tbody>
+                    </table>
+                </div>
     </main>
 
 
