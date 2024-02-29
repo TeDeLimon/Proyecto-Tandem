@@ -1,3 +1,11 @@
-.font-family {
-    font-family: 'Courier New', Courier, monospace;
-}
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600,700");
+
+//Textos
+$font-family: "Monserrat", sans-serif;
+$dark: #383838;
+$light: #fbfbfb;
+
+//Layout - Puntos de ruptura
+$telefono: 480px;
+$tablet: 768px;
+$desktop: 1024px;
