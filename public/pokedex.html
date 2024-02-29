@@ -1,0 +1,1969 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <main id="app">
+
+        <header>
+            <h1>¡Atrápalos todos!</h1>
+        </header>
+
+        <div id="poke-list">
+            <div class="card" data-id="1" data-name="bulbasaur" data-type="grass"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/bulbasaur.png">
+                </div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">bulbasaur</h4>
+                    <ul class="card__types">
+                        <li>grass</li>
+                        <li>poison</li>
+                    </ul>
+                </div>
+                <div class="card__number">#1</div>
+            </div>
+            <div class="card" data-id="2" data-name="ivysaur" data-type="grass"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/ivysaur.png"></div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">ivysaur</h4>
+                    <ul class="card__types">
+                        <li>grass</li>
+                        <li>poison</li>
+                    </ul>
+                </div>
+                <div class="card__number">#2</div>
+            </div>
+            <div class="card" data-id="3" data-name="venusaur" data-type="grass"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/venusaur.png">
+                </div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">venusaur</h4>
+                    <ul class="card__types">
+                        <li>grass</li>
+                        <li>poison</li>
+                    </ul>
+                </div>
+                <div class="card__number">#3</div>
+            </div>
+            <div class="card" data-id="4" data-name="charmander" data-type="fire"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/charmander.png">
+                </div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">charmander</h4>
+                    <ul class="card__types">
+                        <li>fire</li>
+                    </ul>
+                </div>
+                <div class="card__number">#4</div>
+            </div>
+            <div class="card" data-id="5" data-name="charmeleon" data-type="fire"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/charmeleon.png">
+                </div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">charmeleon</h4>
+                    <ul class="card__types">
+                        <li>fire</li>
+                    </ul>
+                </div>
+                <div class="card__number">#5</div>
+            </div>
+            <div class="card" data-id="6" data-name="charizard" data-type="fire"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/charizard.png">
+                </div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">charizard</h4>
+                    <ul class="card__types">
+                        <li>fire</li>
+                        <li>flying</li>
+                    </ul>
+                </div>
+                <div class="card__number">#6</div>
+            </div>
+            <div class="card" data-id="7" data-name="squirtle" data-type="water"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/squirtle.png">
+                </div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">squirtle</h4>
+                    <ul class="card__types">
+                        <li>water</li>
+                    </ul>
+                </div>
+                <div class="card__number">#7</div>
+            </div>
+            <div class="card" data-id="8" data-name="wartortle" data-type="water"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/wartortle.png">
+                </div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">wartortle</h4>
+                    <ul class="card__types">
+                        <li>water</li>
+                    </ul>
+                </div>
+                <div class="card__number">#8</div>
+            </div>
+            <div class="card" data-id="9" data-name="blastoise" data-type="water"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/blastoise.png">
+                </div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">blastoise</h4>
+                    <ul class="card__types">
+                        <li>water</li>
+                    </ul>
+                </div>
+                <div class="card__number">#9</div>
+            </div>
+            <div class="card" data-id="10" data-name="caterpie" data-type="bug"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/caterpie.png">
+                </div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">caterpie</h4>
+                    <ul class="card__types">
+                        <li>bug</li>
+                    </ul>
+                </div>
+                <div class="card__number">#10</div>
+            </div>
+            <div class="card" data-id="11" data-name="metapod" data-type="bug"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/metapod.png"></div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">metapod</h4>
+                    <ul class="card__types">
+                        <li>bug</li>
+                    </ul>
+                </div>
+                <div class="card__number">#11</div>
+            </div>
+            <div class="card" data-id="12" data-name="butterfree" data-type="bug"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/butterfree.png">
+                </div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">butterfree</h4>
+                    <ul class="card__types">
+                        <li>bug</li>
+                        <li>flying</li>
+                    </ul>
+                </div>
+                <div class="card__number">#12</div>
+            </div>
+            <div class="card" data-id="13" data-name="weedle" data-type="bug"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/weedle.png"></div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">weedle</h4>
+                    <ul class="card__types">
+                        <li>bug</li>
+                        <li>poison</li>
+                    </ul>
+                </div>
+                <div class="card__number">#13</div>
+            </div>
+            <div class="card" data-id="14" data-name="kakuna" data-type="bug"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/kakuna.png"></div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">kakuna</h4>
+                    <ul class="card__types">
+                        <li>bug</li>
+                        <li>poison</li>
+                    </ul>
+                </div>
+                <div class="card__number">#14</div>
+            </div>
+            <div class="card" data-id="15" data-name="beedrill" data-type="bug"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/beedrill.png">
+                </div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">beedrill</h4>
+                    <ul class="card__types">
+                        <li>bug</li>
+                        <li>poison</li>
+                    </ul>
+                </div>
+                <div class="card__number">#15</div>
+            </div>
+            <div class="card" data-id="16" data-name="pidgey" data-type="normal"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/pidgey.png"></div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">pidgey</h4>
+                    <ul class="card__types">
+                        <li>normal</li>
+                        <li>flying</li>
+                    </ul>
+                </div>
+                <div class="card__number">#16</div>
+            </div>
+            <div class="card" data-id="17" data-name="pidgeotto" data-type="normal"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/pidgeotto.png">
+                </div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">pidgeotto</h4>
+                    <ul class="card__types">
+                        <li>normal</li>
+                        <li>flying</li>
+                    </ul>
+                </div>
+                <div class="card__number">#17</div>
+            </div>
+            <div class="card" data-id="18" data-name="pidgeot" data-type="normal"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/pidgeot.png"></div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">pidgeot</h4>
+                    <ul class="card__types">
+                        <li>normal</li>
+                        <li>flying</li>
+                    </ul>
+                </div>
+                <div class="card__number">#18</div>
+            </div>
+            <div class="card" data-id="19" data-name="rattata" data-type="normal"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/rattata.png"></div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">rattata</h4>
+                    <ul class="card__types">
+                        <li>normal</li>
+                    </ul>
+                </div>
+                <div class="card__number">#19</div>
+            </div>
+            <div class="card" data-id="20" data-name="raticate" data-type="normal"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/raticate.png">
+                </div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">raticate</h4>
+                    <ul class="card__types">
+                        <li>normal</li>
+                    </ul>
+                </div>
+                <div class="card__number">#20</div>
+            </div>
+            <div class="card" data-id="21" data-name="spearow" data-type="normal"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/spearow.png"></div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">spearow</h4>
+                    <ul class="card__types">
+                        <li>normal</li>
+                        <li>flying</li>
+                    </ul>
+                </div>
+                <div class="card__number">#21</div>
+            </div>
+            <div class="card" data-id="22" data-name="fearow" data-type="normal"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/fearow.png"></div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">fearow</h4>
+                    <ul class="card__types">
+                        <li>normal</li>
+                        <li>flying</li>
+                    </ul>
+                </div>
+                <div class="card__number">#22</div>
+            </div>
+            <div class="card" data-id="23" data-name="ekans" data-type="poison"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/ekans.png"></div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">ekans</h4>
+                    <ul class="card__types">
+                        <li>poison</li>
+                    </ul>
+                </div>
+                <div class="card__number">#23</div>
+            </div>
+            <div class="card" data-id="24" data-name="arbok" data-type="poison"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/arbok.png"></div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">arbok</h4>
+                    <ul class="card__types">
+                        <li>poison</li>
+                    </ul>
+                </div>
+                <div class="card__number">#24</div>
+            </div>
+            <div class="card" data-id="25" data-name="pikachu" data-type="electric"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/pikachu.png"></div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">pikachu</h4>
+                    <ul class="card__types">
+                        <li>electric</li>
+                    </ul>
+                </div>
+                <div class="card__number">#25</div>
+            </div>
+            <div class="card" data-id="26" data-name="raichu" data-type="electric"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/raichu.png"></div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">raichu</h4>
+                    <ul class="card__types">
+                        <li>electric</li>
+                    </ul>
+                </div>
+                <div class="card__number">#26</div>
+            </div>
+            <div class="card" data-id="27" data-name="sandshrew" data-type="ground"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/sandshrew.png">
+                </div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">sandshrew</h4>
+                    <ul class="card__types">
+                        <li>ground</li>
+                    </ul>
+                </div>
+                <div class="card__number">#27</div>
+            </div>
+            <div class="card" data-id="28" data-name="sandslash" data-type="ground"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/sandslash.png">
+                </div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">sandslash</h4>
+                    <ul class="card__types">
+                        <li>ground</li>
+                    </ul>
+                </div>
+                <div class="card__number">#28</div>
+            </div>
+            <div class="card" data-id="29" data-name="nidoran-f" data-type="poison"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/nidoran-f.png">
+                </div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">nidoran-f</h4>
+                    <ul class="card__types">
+                        <li>poison</li>
+                    </ul>
+                </div>
+                <div class="card__number">#29</div>
+            </div>
+            <div class="card" data-id="30" data-name="nidorina" data-type="poison"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/nidorina.png">
+                </div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">nidorina</h4>
+                    <ul class="card__types">
+                        <li>poison</li>
+                    </ul>
+                </div>
+                <div class="card__number">#30</div>
+            </div>
+            <div class="card" data-id="31" data-name="nidoqueen" data-type="poison"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/nidoqueen.png">
+                </div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">nidoqueen</h4>
+                    <ul class="card__types">
+                        <li>poison</li>
+                        <li>ground</li>
+                    </ul>
+                </div>
+                <div class="card__number">#31</div>
+            </div>
+            <div class="card" data-id="32" data-name="nidoran-m" data-type="poison"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/nidoran-m.png">
+                </div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">nidoran-m</h4>
+                    <ul class="card__types">
+                        <li>poison</li>
+                    </ul>
+                </div>
+                <div class="card__number">#32</div>
+            </div>
+            <div class="card" data-id="33" data-name="nidorino" data-type="poison"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/nidorino.png">
+                </div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">nidorino</h4>
+                    <ul class="card__types">
+                        <li>poison</li>
+                    </ul>
+                </div>
+                <div class="card__number">#33</div>
+            </div>
+            <div class="card" data-id="34" data-name="nidoking" data-type="poison"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/nidoking.png">
+                </div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">nidoking</h4>
+                    <ul class="card__types">
+                        <li>poison</li>
+                        <li>ground</li>
+                    </ul>
+                </div>
+                <div class="card__number">#34</div>
+            </div>
+            <div class="card" data-id="35" data-name="clefairy" data-type="fairy"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/clefairy.png">
+                </div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">clefairy</h4>
+                    <ul class="card__types">
+                        <li>fairy</li>
+                    </ul>
+                </div>
+                <div class="card__number">#35</div>
+            </div>
+            <div class="card" data-id="36" data-name="clefable" data-type="fairy"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/clefable.png">
+                </div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">clefable</h4>
+                    <ul class="card__types">
+                        <li>fairy</li>
+                    </ul>
+                </div>
+                <div class="card__number">#36</div>
+            </div>
+            <div class="card" data-id="37" data-name="vulpix" data-type="fire"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/vulpix.png"></div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">vulpix</h4>
+                    <ul class="card__types">
+                        <li>fire</li>
+                    </ul>
+                </div>
+                <div class="card__number">#37</div>
+            </div>
+            <div class="card" data-id="38" data-name="ninetales" data-type="fire"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/ninetales.png">
+                </div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">ninetales</h4>
+                    <ul class="card__types">
+                        <li>fire</li>
+                    </ul>
+                </div>
+                <div class="card__number">#38</div>
+            </div>
+            <div class="card" data-id="39" data-name="jigglypuff" data-type="normal"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/jigglypuff.png">
+                </div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">jigglypuff</h4>
+                    <ul class="card__types">
+                        <li>normal</li>
+                        <li>fairy</li>
+                    </ul>
+                </div>
+                <div class="card__number">#39</div>
+            </div>
+            <div class="card" data-id="40" data-name="wigglytuff" data-type="normal"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/wigglytuff.png">
+                </div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">wigglytuff</h4>
+                    <ul class="card__types">
+                        <li>normal</li>
+                        <li>fairy</li>
+                    </ul>
+                </div>
+                <div class="card__number">#40</div>
+            </div>
+            <div class="card" data-id="41" data-name="zubat" data-type="poison"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/zubat.png"></div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">zubat</h4>
+                    <ul class="card__types">
+                        <li>poison</li>
+                        <li>flying</li>
+                    </ul>
+                </div>
+                <div class="card__number">#41</div>
+            </div>
+            <div class="card" data-id="42" data-name="golbat" data-type="poison"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/golbat.png"></div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">golbat</h4>
+                    <ul class="card__types">
+                        <li>poison</li>
+                        <li>flying</li>
+                    </ul>
+                </div>
+                <div class="card__number">#42</div>
+            </div>
+            <div class="card" data-id="43" data-name="oddish" data-type="grass"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/oddish.png"></div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">oddish</h4>
+                    <ul class="card__types">
+                        <li>grass</li>
+                        <li>poison</li>
+                    </ul>
+                </div>
+                <div class="card__number">#43</div>
+            </div>
+            <div class="card" data-id="44" data-name="gloom" data-type="grass"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/gloom.png"></div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">gloom</h4>
+                    <ul class="card__types">
+                        <li>grass</li>
+                        <li>poison</li>
+                    </ul>
+                </div>
+                <div class="card__number">#44</div>
+            </div>
+            <div class="card" data-id="45" data-name="vileplume" data-type="grass"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/vileplume.png">
+                </div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">vileplume</h4>
+                    <ul class="card__types">
+                        <li>grass</li>
+                        <li>poison</li>
+                    </ul>
+                </div>
+                <div class="card__number">#45</div>
+            </div>
+            <div class="card" data-id="46" data-name="paras" data-type="bug"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/paras.png"></div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">paras</h4>
+                    <ul class="card__types">
+                        <li>bug</li>
+                        <li>grass</li>
+                    </ul>
+                </div>
+                <div class="card__number">#46</div>
+            </div>
+            <div class="card" data-id="47" data-name="parasect" data-type="bug"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/parasect.png">
+                </div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">parasect</h4>
+                    <ul class="card__types">
+                        <li>bug</li>
+                        <li>grass</li>
+                    </ul>
+                </div>
+                <div class="card__number">#47</div>
+            </div>
+            <div class="card" data-id="48" data-name="venonat" data-type="bug"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/venonat.png"></div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">venonat</h4>
+                    <ul class="card__types">
+                        <li>bug</li>
+                        <li>poison</li>
+                    </ul>
+                </div>
+                <div class="card__number">#48</div>
+            </div>
+            <div class="card" data-id="49" data-name="venomoth" data-type="bug"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/venomoth.png">
+                </div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">venomoth</h4>
+                    <ul class="card__types">
+                        <li>bug</li>
+                        <li>poison</li>
+                    </ul>
+                </div>
+                <div class="card__number">#49</div>
+            </div>
+            <div class="card" data-id="50" data-name="diglett" data-type="ground"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/diglett.png"></div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">diglett</h4>
+                    <ul class="card__types">
+                        <li>ground</li>
+                    </ul>
+                </div>
+                <div class="card__number">#50</div>
+            </div>
+            <div class="card" data-id="51" data-name="dugtrio" data-type="ground"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/dugtrio.png"></div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">dugtrio</h4>
+                    <ul class="card__types">
+                        <li>ground</li>
+                    </ul>
+                </div>
+                <div class="card__number">#51</div>
+            </div>
+            <div class="card" data-id="52" data-name="meowth" data-type="normal"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/meowth.png"></div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">meowth</h4>
+                    <ul class="card__types">
+                        <li>normal</li>
+                    </ul>
+                </div>
+                <div class="card__number">#52</div>
+            </div>
+            <div class="card" data-id="53" data-name="persian" data-type="normal"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/persian.png"></div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">persian</h4>
+                    <ul class="card__types">
+                        <li>normal</li>
+                    </ul>
+                </div>
+                <div class="card__number">#53</div>
+            </div>
+            <div class="card" data-id="54" data-name="psyduck" data-type="water"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/psyduck.png"></div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">psyduck</h4>
+                    <ul class="card__types">
+                        <li>water</li>
+                    </ul>
+                </div>
+                <div class="card__number">#54</div>
+            </div>
+            <div class="card" data-id="55" data-name="golduck" data-type="water"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/golduck.png"></div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">golduck</h4>
+                    <ul class="card__types">
+                        <li>water</li>
+                    </ul>
+                </div>
+                <div class="card__number">#55</div>
+            </div>
+            <div class="card" data-id="56" data-name="mankey" data-type="fighting"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/mankey.png"></div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">mankey</h4>
+                    <ul class="card__types">
+                        <li>fighting</li>
+                    </ul>
+                </div>
+                <div class="card__number">#56</div>
+            </div>
+            <div class="card" data-id="57" data-name="primeape" data-type="fighting"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/primeape.png">
+                </div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">primeape</h4>
+                    <ul class="card__types">
+                        <li>fighting</li>
+                    </ul>
+                </div>
+                <div class="card__number">#57</div>
+            </div>
+            <div class="card" data-id="58" data-name="growlithe" data-type="fire"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/growlithe.png">
+                </div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">growlithe</h4>
+                    <ul class="card__types">
+                        <li>fire</li>
+                    </ul>
+                </div>
+                <div class="card__number">#58</div>
+            </div>
+            <div class="card" data-id="59" data-name="arcanine" data-type="fire"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/arcanine.png">
+                </div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">arcanine</h4>
+                    <ul class="card__types">
+                        <li>fire</li>
+                    </ul>
+                </div>
+                <div class="card__number">#59</div>
+            </div>
+            <div class="card" data-id="60" data-name="poliwag" data-type="water"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/poliwag.png"></div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">poliwag</h4>
+                    <ul class="card__types">
+                        <li>water</li>
+                    </ul>
+                </div>
+                <div class="card__number">#60</div>
+            </div>
+            <div class="card" data-id="61" data-name="poliwhirl" data-type="water"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/poliwhirl.png">
+                </div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">poliwhirl</h4>
+                    <ul class="card__types">
+                        <li>water</li>
+                    </ul>
+                </div>
+                <div class="card__number">#61</div>
+            </div>
+            <div class="card" data-id="62" data-name="poliwrath" data-type="water"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/poliwrath.png">
+                </div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">poliwrath</h4>
+                    <ul class="card__types">
+                        <li>water</li>
+                        <li>fighting</li>
+                    </ul>
+                </div>
+                <div class="card__number">#62</div>
+            </div>
+            <div class="card" data-id="63" data-name="abra" data-type="psychic"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/abra.png"></div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">abra</h4>
+                    <ul class="card__types">
+                        <li>psychic</li>
+                    </ul>
+                </div>
+                <div class="card__number">#63</div>
+            </div>
+            <div class="card" data-id="64" data-name="kadabra" data-type="psychic"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/kadabra.png"></div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">kadabra</h4>
+                    <ul class="card__types">
+                        <li>psychic</li>
+                    </ul>
+                </div>
+                <div class="card__number">#64</div>
+            </div>
+            <div class="card" data-id="65" data-name="alakazam" data-type="psychic"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/alakazam.png">
+                </div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">alakazam</h4>
+                    <ul class="card__types">
+                        <li>psychic</li>
+                    </ul>
+                </div>
+                <div class="card__number">#65</div>
+            </div>
+            <div class="card" data-id="66" data-name="machop" data-type="fighting"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/machop.png"></div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">machop</h4>
+                    <ul class="card__types">
+                        <li>fighting</li>
+                    </ul>
+                </div>
+                <div class="card__number">#66</div>
+            </div>
+            <div class="card" data-id="67" data-name="machoke" data-type="fighting"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/machoke.png"></div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">machoke</h4>
+                    <ul class="card__types">
+                        <li>fighting</li>
+                    </ul>
+                </div>
+                <div class="card__number">#67</div>
+            </div>
+            <div class="card" data-id="68" data-name="machamp" data-type="fighting"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/machamp.png"></div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">machamp</h4>
+                    <ul class="card__types">
+                        <li>fighting</li>
+                    </ul>
+                </div>
+                <div class="card__number">#68</div>
+            </div>
+            <div class="card" data-id="69" data-name="bellsprout" data-type="grass"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/bellsprout.png">
+                </div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">bellsprout</h4>
+                    <ul class="card__types">
+                        <li>grass</li>
+                        <li>poison</li>
+                    </ul>
+                </div>
+                <div class="card__number">#69</div>
+            </div>
+            <div class="card" data-id="70" data-name="weepinbell" data-type="grass"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/weepinbell.png">
+                </div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">weepinbell</h4>
+                    <ul class="card__types">
+                        <li>grass</li>
+                        <li>poison</li>
+                    </ul>
+                </div>
+                <div class="card__number">#70</div>
+            </div>
+            <div class="card" data-id="71" data-name="victreebel" data-type="grass"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/victreebel.png">
+                </div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">victreebel</h4>
+                    <ul class="card__types">
+                        <li>grass</li>
+                        <li>poison</li>
+                    </ul>
+                </div>
+                <div class="card__number">#71</div>
+            </div>
+            <div class="card" data-id="72" data-name="tentacool" data-type="water"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/tentacool.png">
+                </div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">tentacool</h4>
+                    <ul class="card__types">
+                        <li>water</li>
+                        <li>poison</li>
+                    </ul>
+                </div>
+                <div class="card__number">#72</div>
+            </div>
+            <div class="card" data-id="73" data-name="tentacruel" data-type="water"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/tentacruel.png">
+                </div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">tentacruel</h4>
+                    <ul class="card__types">
+                        <li>water</li>
+                        <li>poison</li>
+                    </ul>
+                </div>
+                <div class="card__number">#73</div>
+            </div>
+            <div class="card" data-id="74" data-name="geodude" data-type="rock"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/geodude.png"></div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">geodude</h4>
+                    <ul class="card__types">
+                        <li>rock</li>
+                        <li>ground</li>
+                    </ul>
+                </div>
+                <div class="card__number">#74</div>
+            </div>
+            <div class="card" data-id="75" data-name="graveler" data-type="rock"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/graveler.png">
+                </div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">graveler</h4>
+                    <ul class="card__types">
+                        <li>rock</li>
+                        <li>ground</li>
+                    </ul>
+                </div>
+                <div class="card__number">#75</div>
+            </div>
+            <div class="card" data-id="76" data-name="golem" data-type="rock"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/golem.png"></div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">golem</h4>
+                    <ul class="card__types">
+                        <li>rock</li>
+                        <li>ground</li>
+                    </ul>
+                </div>
+                <div class="card__number">#76</div>
+            </div>
+            <div class="card" data-id="77" data-name="ponyta" data-type="fire"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/ponyta.png"></div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">ponyta</h4>
+                    <ul class="card__types">
+                        <li>fire</li>
+                    </ul>
+                </div>
+                <div class="card__number">#77</div>
+            </div>
+            <div class="card" data-id="78" data-name="rapidash" data-type="fire"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/rapidash.png">
+                </div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">rapidash</h4>
+                    <ul class="card__types">
+                        <li>fire</li>
+                    </ul>
+                </div>
+                <div class="card__number">#78</div>
+            </div>
+            <div class="card" data-id="79" data-name="slowpoke" data-type="water"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/slowpoke.png">
+                </div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">slowpoke</h4>
+                    <ul class="card__types">
+                        <li>water</li>
+                        <li>psychic</li>
+                    </ul>
+                </div>
+                <div class="card__number">#79</div>
+            </div>
+            <div class="card" data-id="80" data-name="slowbro" data-type="water"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/slowbro.png"></div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">slowbro</h4>
+                    <ul class="card__types">
+                        <li>water</li>
+                        <li>psychic</li>
+                    </ul>
+                </div>
+                <div class="card__number">#80</div>
+            </div>
+            <div class="card" data-id="81" data-name="magnemite" data-type="electric"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/magnemite.png">
+                </div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">magnemite</h4>
+                    <ul class="card__types">
+                        <li>electric</li>
+                        <li>steel</li>
+                    </ul>
+                </div>
+                <div class="card__number">#81</div>
+            </div>
+            <div class="card" data-id="82" data-name="magneton" data-type="electric"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/magneton.png">
+                </div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">magneton</h4>
+                    <ul class="card__types">
+                        <li>electric</li>
+                        <li>steel</li>
+                    </ul>
+                </div>
+                <div class="card__number">#82</div>
+            </div>
+            <div class="card" data-id="83" data-name="farfetchd" data-type="normal"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/farfetchd.png">
+                </div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">farfetchd</h4>
+                    <ul class="card__types">
+                        <li>normal</li>
+                        <li>flying</li>
+                    </ul>
+                </div>
+                <div class="card__number">#83</div>
+            </div>
+            <div class="card" data-id="84" data-name="doduo" data-type="normal"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/doduo.png"></div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">doduo</h4>
+                    <ul class="card__types">
+                        <li>normal</li>
+                        <li>flying</li>
+                    </ul>
+                </div>
+                <div class="card__number">#84</div>
+            </div>
+            <div class="card" data-id="85" data-name="dodrio" data-type="normal"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/dodrio.png"></div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">dodrio</h4>
+                    <ul class="card__types">
+                        <li>normal</li>
+                        <li>flying</li>
+                    </ul>
+                </div>
+                <div class="card__number">#85</div>
+            </div>
+            <div class="card" data-id="86" data-name="seel" data-type="water"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/seel.png"></div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">seel</h4>
+                    <ul class="card__types">
+                        <li>water</li>
+                    </ul>
+                </div>
+                <div class="card__number">#86</div>
+            </div>
+            <div class="card" data-id="87" data-name="dewgong" data-type="water"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/dewgong.png"></div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">dewgong</h4>
+                    <ul class="card__types">
+                        <li>water</li>
+                        <li>ice</li>
+                    </ul>
+                </div>
+                <div class="card__number">#87</div>
+            </div>
+            <div class="card" data-id="88" data-name="grimer" data-type="poison"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/grimer.png"></div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">grimer</h4>
+                    <ul class="card__types">
+                        <li>poison</li>
+                    </ul>
+                </div>
+                <div class="card__number">#88</div>
+            </div>
+            <div class="card" data-id="89" data-name="muk" data-type="poison"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/muk.png"></div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">muk</h4>
+                    <ul class="card__types">
+                        <li>poison</li>
+                    </ul>
+                </div>
+                <div class="card__number">#89</div>
+            </div>
+            <div class="card" data-id="90" data-name="shellder" data-type="water"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/shellder.png">
+                </div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">shellder</h4>
+                    <ul class="card__types">
+                        <li>water</li>
+                    </ul>
+                </div>
+                <div class="card__number">#90</div>
+            </div>
+            <div class="card" data-id="91" data-name="cloyster" data-type="water"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/cloyster.png">
+                </div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">cloyster</h4>
+                    <ul class="card__types">
+                        <li>water</li>
+                        <li>ice</li>
+                    </ul>
+                </div>
+                <div class="card__number">#91</div>
+            </div>
+            <div class="card" data-id="92" data-name="gastly" data-type="ghost"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/gastly.png"></div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">gastly</h4>
+                    <ul class="card__types">
+                        <li>ghost</li>
+                        <li>poison</li>
+                    </ul>
+                </div>
+                <div class="card__number">#92</div>
+            </div>
+            <div class="card" data-id="93" data-name="haunter" data-type="ghost"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/haunter.png"></div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">haunter</h4>
+                    <ul class="card__types">
+                        <li>ghost</li>
+                        <li>poison</li>
+                    </ul>
+                </div>
+                <div class="card__number">#93</div>
+            </div>
+            <div class="card" data-id="94" data-name="gengar" data-type="ghost"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/gengar.png"></div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">gengar</h4>
+                    <ul class="card__types">
+                        <li>ghost</li>
+                        <li>poison</li>
+                    </ul>
+                </div>
+                <div class="card__number">#94</div>
+            </div>
+            <div class="card" data-id="95" data-name="onix" data-type="rock"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/onix.png"></div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">onix</h4>
+                    <ul class="card__types">
+                        <li>rock</li>
+                        <li>ground</li>
+                    </ul>
+                </div>
+                <div class="card__number">#95</div>
+            </div>
+            <div class="card" data-id="96" data-name="drowzee" data-type="psychic"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/drowzee.png"></div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">drowzee</h4>
+                    <ul class="card__types">
+                        <li>psychic</li>
+                    </ul>
+                </div>
+                <div class="card__number">#96</div>
+            </div>
+            <div class="card" data-id="97" data-name="hypno" data-type="psychic"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/hypno.png"></div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">hypno</h4>
+                    <ul class="card__types">
+                        <li>psychic</li>
+                    </ul>
+                </div>
+                <div class="card__number">#97</div>
+            </div>
+            <div class="card" data-id="98" data-name="krabby" data-type="water"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/krabby.png"></div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">krabby</h4>
+                    <ul class="card__types">
+                        <li>water</li>
+                    </ul>
+                </div>
+                <div class="card__number">#98</div>
+            </div>
+            <div class="card" data-id="99" data-name="kingler" data-type="water"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/kingler.png"></div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">kingler</h4>
+                    <ul class="card__types">
+                        <li>water</li>
+                    </ul>
+                </div>
+                <div class="card__number">#99</div>
+            </div>
+            <div class="card" data-id="100" data-name="voltorb" data-type="electric"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/voltorb.png"></div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">voltorb</h4>
+                    <ul class="card__types">
+                        <li>electric</li>
+                    </ul>
+                </div>
+                <div class="card__number">#100</div>
+            </div>
+            <div class="card" data-id="101" data-name="electrode" data-type="electric"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/electrode.png">
+                </div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">electrode</h4>
+                    <ul class="card__types">
+                        <li>electric</li>
+                    </ul>
+                </div>
+                <div class="card__number">#101</div>
+            </div>
+            <div class="card" data-id="102" data-name="exeggcute" data-type="grass"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/exeggcute.png">
+                </div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">exeggcute</h4>
+                    <ul class="card__types">
+                        <li>grass</li>
+                        <li>psychic</li>
+                    </ul>
+                </div>
+                <div class="card__number">#102</div>
+            </div>
+            <div class="card" data-id="103" data-name="exeggutor" data-type="grass"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/exeggutor.png">
+                </div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">exeggutor</h4>
+                    <ul class="card__types">
+                        <li>grass</li>
+                        <li>psychic</li>
+                    </ul>
+                </div>
+                <div class="card__number">#103</div>
+            </div>
+            <div class="card" data-id="104" data-name="cubone" data-type="ground"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/cubone.png"></div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">cubone</h4>
+                    <ul class="card__types">
+                        <li>ground</li>
+                    </ul>
+                </div>
+                <div class="card__number">#104</div>
+            </div>
+            <div class="card" data-id="105" data-name="marowak" data-type="ground"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/marowak.png"></div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">marowak</h4>
+                    <ul class="card__types">
+                        <li>ground</li>
+                    </ul>
+                </div>
+                <div class="card__number">#105</div>
+            </div>
+            <div class="card" data-id="106" data-name="hitmonlee" data-type="fighting"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/hitmonlee.png">
+                </div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">hitmonlee</h4>
+                    <ul class="card__types">
+                        <li>fighting</li>
+                    </ul>
+                </div>
+                <div class="card__number">#106</div>
+            </div>
+            <div class="card" data-id="107" data-name="hitmonchan" data-type="fighting"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/hitmonchan.png">
+                </div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">hitmonchan</h4>
+                    <ul class="card__types">
+                        <li>fighting</li>
+                    </ul>
+                </div>
+                <div class="card__number">#107</div>
+            </div>
+            <div class="card" data-id="108" data-name="lickitung" data-type="normal"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/lickitung.png">
+                </div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">lickitung</h4>
+                    <ul class="card__types">
+                        <li>normal</li>
+                    </ul>
+                </div>
+                <div class="card__number">#108</div>
+            </div>
+            <div class="card" data-id="109" data-name="koffing" data-type="poison"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/koffing.png"></div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">koffing</h4>
+                    <ul class="card__types">
+                        <li>poison</li>
+                    </ul>
+                </div>
+                <div class="card__number">#109</div>
+            </div>
+            <div class="card" data-id="110" data-name="weezing" data-type="poison"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/weezing.png"></div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">weezing</h4>
+                    <ul class="card__types">
+                        <li>poison</li>
+                    </ul>
+                </div>
+                <div class="card__number">#110</div>
+            </div>
+            <div class="card" data-id="111" data-name="rhyhorn" data-type="ground"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/rhyhorn.png"></div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">rhyhorn</h4>
+                    <ul class="card__types">
+                        <li>ground</li>
+                        <li>rock</li>
+                    </ul>
+                </div>
+                <div class="card__number">#111</div>
+            </div>
+            <div class="card" data-id="112" data-name="rhydon" data-type="ground"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/rhydon.png"></div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">rhydon</h4>
+                    <ul class="card__types">
+                        <li>ground</li>
+                        <li>rock</li>
+                    </ul>
+                </div>
+                <div class="card__number">#112</div>
+            </div>
+            <div class="card" data-id="113" data-name="chansey" data-type="normal"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/chansey.png"></div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">chansey</h4>
+                    <ul class="card__types">
+                        <li>normal</li>
+                    </ul>
+                </div>
+                <div class="card__number">#113</div>
+            </div>
+            <div class="card" data-id="114" data-name="tangela" data-type="grass"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/tangela.png"></div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">tangela</h4>
+                    <ul class="card__types">
+                        <li>grass</li>
+                    </ul>
+                </div>
+                <div class="card__number">#114</div>
+            </div>
+            <div class="card" data-id="115" data-name="kangaskhan" data-type="normal"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/kangaskhan.png">
+                </div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">kangaskhan</h4>
+                    <ul class="card__types">
+                        <li>normal</li>
+                    </ul>
+                </div>
+                <div class="card__number">#115</div>
+            </div>
+            <div class="card" data-id="116" data-name="horsea" data-type="water"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/horsea.png"></div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">horsea</h4>
+                    <ul class="card__types">
+                        <li>water</li>
+                    </ul>
+                </div>
+                <div class="card__number">#116</div>
+            </div>
+            <div class="card" data-id="117" data-name="seadra" data-type="water"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/seadra.png"></div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">seadra</h4>
+                    <ul class="card__types">
+                        <li>water</li>
+                    </ul>
+                </div>
+                <div class="card__number">#117</div>
+            </div>
+            <div class="card" data-id="118" data-name="goldeen" data-type="water"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/goldeen.png"></div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">goldeen</h4>
+                    <ul class="card__types">
+                        <li>water</li>
+                    </ul>
+                </div>
+                <div class="card__number">#118</div>
+            </div>
+            <div class="card" data-id="119" data-name="seaking" data-type="water"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/seaking.png"></div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">seaking</h4>
+                    <ul class="card__types">
+                        <li>water</li>
+                    </ul>
+                </div>
+                <div class="card__number">#119</div>
+            </div>
+            <div class="card" data-id="120" data-name="staryu" data-type="water"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/staryu.png"></div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">staryu</h4>
+                    <ul class="card__types">
+                        <li>water</li>
+                    </ul>
+                </div>
+                <div class="card__number">#120</div>
+            </div>
+            <div class="card" data-id="121" data-name="starmie" data-type="water"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/starmie.png"></div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">starmie</h4>
+                    <ul class="card__types">
+                        <li>water</li>
+                        <li>psychic</li>
+                    </ul>
+                </div>
+                <div class="card__number">#121</div>
+            </div>
+            <div class="card" data-id="122" data-name="mr-mime" data-type="psychic"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/mr-mime.png"></div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">mr-mime</h4>
+                    <ul class="card__types">
+                        <li>psychic</li>
+                        <li>fairy</li>
+                    </ul>
+                </div>
+                <div class="card__number">#122</div>
+            </div>
+            <div class="card" data-id="123" data-name="scyther" data-type="bug"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/scyther.png"></div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">scyther</h4>
+                    <ul class="card__types">
+                        <li>bug</li>
+                        <li>flying</li>
+                    </ul>
+                </div>
+                <div class="card__number">#123</div>
+            </div>
+            <div class="card" data-id="124" data-name="jynx" data-type="ice"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/jynx.png"></div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">jynx</h4>
+                    <ul class="card__types">
+                        <li>ice</li>
+                        <li>psychic</li>
+                    </ul>
+                </div>
+                <div class="card__number">#124</div>
+            </div>
+            <div class="card" data-id="125" data-name="electabuzz" data-type="electric"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/electabuzz.png">
+                </div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">electabuzz</h4>
+                    <ul class="card__types">
+                        <li>electric</li>
+                    </ul>
+                </div>
+                <div class="card__number">#125</div>
+            </div>
+            <div class="card" data-id="126" data-name="magmar" data-type="fire"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/magmar.png"></div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">magmar</h4>
+                    <ul class="card__types">
+                        <li>fire</li>
+                    </ul>
+                </div>
+                <div class="card__number">#126</div>
+            </div>
+            <div class="card" data-id="127" data-name="pinsir" data-type="bug"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/pinsir.png"></div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">pinsir</h4>
+                    <ul class="card__types">
+                        <li>bug</li>
+                    </ul>
+                </div>
+                <div class="card__number">#127</div>
+            </div>
+            <div class="card" data-id="128" data-name="tauros" data-type="normal"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/tauros.png"></div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">tauros</h4>
+                    <ul class="card__types">
+                        <li>normal</li>
+                    </ul>
+                </div>
+                <div class="card__number">#128</div>
+            </div>
+            <div class="card" data-id="129" data-name="magikarp" data-type="water"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/magikarp.png">
+                </div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">magikarp</h4>
+                    <ul class="card__types">
+                        <li>water</li>
+                    </ul>
+                </div>
+                <div class="card__number">#129</div>
+            </div>
+            <div class="card" data-id="130" data-name="gyarados" data-type="water"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/gyarados.png">
+                </div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">gyarados</h4>
+                    <ul class="card__types">
+                        <li>water</li>
+                        <li>flying</li>
+                    </ul>
+                </div>
+                <div class="card__number">#130</div>
+            </div>
+            <div class="card" data-id="131" data-name="lapras" data-type="water"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/lapras.png"></div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">lapras</h4>
+                    <ul class="card__types">
+                        <li>water</li>
+                        <li>ice</li>
+                    </ul>
+                </div>
+                <div class="card__number">#131</div>
+            </div>
+            <div class="card" data-id="132" data-name="ditto" data-type="normal"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/ditto.png"></div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">ditto</h4>
+                    <ul class="card__types">
+                        <li>normal</li>
+                    </ul>
+                </div>
+                <div class="card__number">#132</div>
+            </div>
+            <div class="card" data-id="133" data-name="eevee" data-type="normal"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/eevee.png"></div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">eevee</h4>
+                    <ul class="card__types">
+                        <li>normal</li>
+                    </ul>
+                </div>
+                <div class="card__number">#133</div>
+            </div>
+            <div class="card" data-id="134" data-name="vaporeon" data-type="water"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/vaporeon.png">
+                </div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">vaporeon</h4>
+                    <ul class="card__types">
+                        <li>water</li>
+                    </ul>
+                </div>
+                <div class="card__number">#134</div>
+            </div>
+            <div class="card" data-id="135" data-name="jolteon" data-type="electric"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/jolteon.png"></div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">jolteon</h4>
+                    <ul class="card__types">
+                        <li>electric</li>
+                    </ul>
+                </div>
+                <div class="card__number">#135</div>
+            </div>
+            <div class="card" data-id="136" data-name="flareon" data-type="fire"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/flareon.png"></div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">flareon</h4>
+                    <ul class="card__types">
+                        <li>fire</li>
+                    </ul>
+                </div>
+                <div class="card__number">#136</div>
+            </div>
+            <div class="card" data-id="137" data-name="porygon" data-type="normal"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/porygon.png"></div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">porygon</h4>
+                    <ul class="card__types">
+                        <li>normal</li>
+                    </ul>
+                </div>
+                <div class="card__number">#137</div>
+            </div>
+            <div class="card" data-id="138" data-name="omanyte" data-type="rock"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/omanyte.png"></div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">omanyte</h4>
+                    <ul class="card__types">
+                        <li>rock</li>
+                        <li>water</li>
+                    </ul>
+                </div>
+                <div class="card__number">#138</div>
+            </div>
+            <div class="card" data-id="139" data-name="omastar" data-type="rock"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/omastar.png"></div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">omastar</h4>
+                    <ul class="card__types">
+                        <li>rock</li>
+                        <li>water</li>
+                    </ul>
+                </div>
+                <div class="card__number">#139</div>
+            </div>
+            <div class="card" data-id="140" data-name="kabuto" data-type="rock"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/kabuto.png"></div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">kabuto</h4>
+                    <ul class="card__types">
+                        <li>rock</li>
+                        <li>water</li>
+                    </ul>
+                </div>
+                <div class="card__number">#140</div>
+            </div>
+            <div class="card" data-id="141" data-name="kabutops" data-type="rock"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/kabutops.png">
+                </div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">kabutops</h4>
+                    <ul class="card__types">
+                        <li>rock</li>
+                        <li>water</li>
+                    </ul>
+                </div>
+                <div class="card__number">#141</div>
+            </div>
+            <div class="card" data-id="142" data-name="aerodactyl" data-type="rock"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/aerodactyl.png">
+                </div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">aerodactyl</h4>
+                    <ul class="card__types">
+                        <li>rock</li>
+                        <li>flying</li>
+                    </ul>
+                </div>
+                <div class="card__number">#142</div>
+            </div>
+            <div class="card" data-id="143" data-name="snorlax" data-type="normal"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/snorlax.png"></div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">snorlax</h4>
+                    <ul class="card__types">
+                        <li>normal</li>
+                    </ul>
+                </div>
+                <div class="card__number">#143</div>
+            </div>
+            <div class="card" data-id="144" data-name="articuno" data-type="ice"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/articuno.png">
+                </div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">articuno</h4>
+                    <ul class="card__types">
+                        <li>ice</li>
+                        <li>flying</li>
+                    </ul>
+                </div>
+                <div class="card__number">#144</div>
+            </div>
+            <div class="card" data-id="145" data-name="zapdos" data-type="electric"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/zapdos.png"></div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">zapdos</h4>
+                    <ul class="card__types">
+                        <li>electric</li>
+                        <li>flying</li>
+                    </ul>
+                </div>
+                <div class="card__number">#145</div>
+            </div>
+            <div class="card" data-id="146" data-name="moltres" data-type="fire"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/moltres.png"></div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">moltres</h4>
+                    <ul class="card__types">
+                        <li>fire</li>
+                        <li>flying</li>
+                    </ul>
+                </div>
+                <div class="card__number">#146</div>
+            </div>
+            <div class="card" data-id="147" data-name="dratini" data-type="dragon"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/dratini.png"></div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">dratini</h4>
+                    <ul class="card__types">
+                        <li>dragon</li>
+                    </ul>
+                </div>
+                <div class="card__number">#147</div>
+            </div>
+            <div class="card" data-id="148" data-name="dragonair" data-type="dragon"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/dragonair.png">
+                </div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">dragonair</h4>
+                    <ul class="card__types">
+                        <li>dragon</li>
+                    </ul>
+                </div>
+                <div class="card__number">#148</div>
+            </div>
+            <div class="card" data-id="149" data-name="dragonite" data-type="dragon"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/dragonite.png">
+                </div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">dragonite</h4>
+                    <ul class="card__types">
+                        <li>dragon</li>
+                        <li>flying</li>
+                    </ul>
+                </div>
+                <div class="card__number">#149</div>
+            </div>
+            <div class="card" data-id="150" data-name="mewtwo" data-type="psychic"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/mewtwo.png"></div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">mewtwo</h4>
+                    <ul class="card__types">
+                        <li>psychic</li>
+                    </ul>
+                </div>
+                <div class="card__number">#150</div>
+            </div>
+            <div class="card" data-id="151" data-name="mew" data-type="psychic"
+                style="opacity: 1; transform: translate(0px);">
+                <div class="card__image"><img src="https://img.pokemondb.net/sprites/home/normal/mew.png"></div>
+                <div class="card__particle"></div>
+                <div class="card__detail">
+                    <h4 class="card__name">mew</h4>
+                    <ul class="card__types">
+                        <li>psychic</li>
+                    </ul>
+                </div>
+                <div class="card__number">#151</div>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>
+
+<!-- https://codepen.io/designfenix/pen/OJQebQb -->
