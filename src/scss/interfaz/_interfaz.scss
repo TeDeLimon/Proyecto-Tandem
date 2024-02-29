@@ -1,4 +1,5 @@
 @use 'componentes/mixins' as m;
+@use 'componentes/variables' as v;
 
 body {
     background-image: linear-gradient(68.4deg,
@@ -12,6 +13,15 @@ body {
     @media (min-width: 375px) {
         align-items: center;
     }
+
+    font-family: v.$font-family;
+}
+
+.iphone-x {
+    margin: 40px auto;
+    border-radius: 40px;
+    height: 780px;
+    width: 360px;
 }
 
 #app {
@@ -19,40 +29,562 @@ body {
     padding: 50px 0;
 }
 
+#search-filter-form {
+    position: sticky;
+    top: 0px;
+    z-index: 4;
+    //background: $light;
+    padding: 0 10px;
+    padding-top: 40px;
+
+    .form-search {
+        .input-group {
+            border-radius: v.$border-radius;
+            background: v.$light;
+            box-shadow: 3px 5px 10px rgb(0 0 0 / 5%);
+            display: flex;
+            padding: 10px 20px;
+
+            input {
+                flex: 1;
+                outline: none;
+                border: 0;
+                background: transparent;
+                font-size: 0.9rem;
+                color: v.$dark;
+                font-family: "Montserrat", sans-serif;
+            }
+
+            button {
+                margin-left: auto;
+                background: v.$light;
+                border-radius: v.$border-radius/2;
+                border: 0;
+                color: v.$dark;
+                cursor: pointer;
+                outline: none;
+                width: 32px;
+                height: 32px;
+                transition: ease all 0.3s;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                &:hover {
+                    background: darken(v.$light, 10%);
+                }
+            }
+        }
+    }
+}
+
 #poke-list {
 
-    display: grid;
-    @include m.grid(1);
-
-    @include m.tablet {
-        @include m.grid(1);
-    }
-
-    @include m.desktop {
-        @include m.grid(2);
-    }
+    @include m.grid(2);
+    grid-column-gap: 15px;
+    grid-row-gap: 30px;
+    justify-items: stretch;
+    align-items: stretch;
+    padding-top: 20px;
+    padding-left: 10px;
 
     .card {
 
-        height: 300px;
-        width: 300px;
+        display: flex;
+        background: v.$light;
+        padding: 10px 20px;
+        border-radius: 20px;
         position: relative;
         overflow: hidden;
+        flex-direction: column;
+        align-items: center;
+        transition: ease all 0.3s;
+        box-shadow: 0 1px 2px rgb(0 0 0 / 2%), 0 2px 4px rgb(0 0 0 / 2%),
+            0 4px 8px rgb(0 0 0 / 2%), 0 8px 16px rgb(0 0 0 / 2%),
+            0 16px 32px rgb(0 0 0 / 2%), 0 32px 64px rgb(0 0 0 / 2%);
+        opacity: 0;
+        transform: translatey(50px);
 
-        .card__detail {
+        &.hide {
+            display: none;
+        }
 
+        &--active {
             position: absolute;
-            bottom: 0;
+            height: 100%;
+            width: 100%;
+            z-index: 6;
             right: 0;
-            width:50%;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin: 0;
+            padding: 0;
+            padding-top: 40px;
+        }
 
+        &__particle {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            left: 0;
+            top: 0;
+            animation: rotate360 15s linear both infinite;
+            transform-origin: center;
 
-            .card__name {
-                font-weight: 700;
-                font-size: 2rem;
+            &:before,
+            &:after {
+                content: "";
+                position: absolute;
+                right: -25%;
+                top: -25%;
+                height: 90%;
+                width: 90%;
+                border-radius: 60%;
+                filter: blur(60px);
+                opacity: 0.2;
+                z-index: 0;
+                transition: ease all 0.5s;
+            }
+
+            &:after {
+                bottom: -25%;
+                left: -25%;
+                top: auto;
+                right: auto;
             }
         }
 
+        &[data-type="fairy"] {
+            .card__particle {
+                &:before {
+                    background-color: #e69fb0;
+                }
 
+                &:after {
+                    background-color: #ff8cd0;
+                }
+            }
+        }
+
+        &[data-type="psychic"] {
+            .card__particle {
+                &:before {
+                    background-color: #9600f4;
+                }
+
+                &:after {
+                    background-color: #64f4c0;
+                }
+            }
+        }
+
+        &[data-type="fighting"] {
+            .card__particle {
+                &:before {
+                    background-color: #ffb46b;
+                }
+
+                &:after {
+                    background-color: #bd6f22;
+                }
+            }
+        }
+
+        &[data-type="ground"],
+        &[data-type="rock"] {
+            .card__particle {
+                &:before {
+                    background-color: #d2820e;
+                }
+
+                &:after {
+                    background-color: #382203;
+                }
+            }
+        }
+
+        &[data-type="electric"] {
+            .card__particle {
+                &:before {
+                    background-color: #ffd100;
+                }
+
+                &:after {
+                    background-color: #b29200;
+                }
+            }
+        }
+
+        &[data-type="normal"] {
+            .card__particle {
+                &:before {
+                    background-color: #f4eeb8;
+                }
+
+                &:after {
+                    background-color: #c9cc99;
+                }
+            }
+        }
+
+        &[data-type="grass"] {
+            .card__particle {
+                &:before {
+                    background-color: #67fc34;
+                }
+
+                &:after {
+                    background-color: #20fca3;
+                }
+            }
+        }
+
+        &[data-type="dragon"] {
+            .card__particle {
+                &:before {
+                    background-color: #fa6c14;
+                }
+
+                &:after {
+                    background-color: #ffac13;
+                }
+            }
+        }
+
+        &[data-type="fire"] {
+            .card__particle {
+                &:before {
+                    background-color: #ff2e16;
+                }
+
+                &:after {
+                    background-color: #ff5c16;
+                }
+            }
+        }
+
+        &[data-type="water"] {
+            .card__particle {
+                &:before {
+                    background-color: #08e3ff;
+                }
+
+                &:after {
+                    background-color: #008aff;
+                }
+            }
+        }
+
+        &[data-type="poison"],
+        &[data-type="ghost"] {
+            .card__particle {
+                &:before {
+                    background-color: #d49cfb;
+                }
+
+                &:after {
+                    background-color: #40a595;
+                }
+            }
+        }
+
+        &[data-type="ice"] {
+            .card__particle {
+                &:before {
+                    background-color: #00ecf4;
+                }
+
+                &:after {
+                    background-color: #0270f4;
+                }
+            }
+        }
+
+        &[data-type="bug"] {
+            .card__particle {
+                &:before {
+                    background-color: #77dc55;
+                }
+
+                &:after {
+                    background-color: #f5ee83;
+                }
+            }
+        }
+
+        &:hover {
+            background: lighten(v.$light, 10%);
+            cursor: pointer;
+
+            .card__particle {
+
+                &:before,
+                &:after {
+                    opacity: 0.4;
+                }
+            }
+
+            .card__image {
+                transform: scale(1.05);
+            }
+        }
+
+        &__image {
+            z-index: 1;
+            margin-top: -5px;
+            transition: ease all 0.3s;
+
+            img {
+                filter: drop-shadow(0 10px 10px rgb(0 0 0 / 10%));
+                max-width: 100%;
+            }
+        }
+
+        &__name {
+            font-family: Montserrat, sans-serif;
+            font-size: 1.3em;
+            font-weight: 700;
+            color: v.$dark;
+            text-transform: capitalize;
+            mix-blend-mode: color-burn;
+            z-index: 3;
+            text-align: center;
+            position: relative;
+        }
+
+        &__number {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            padding: 8px 16px;
+            font-family: Montserrat, sans-serif;
+            color: v.$dark;
+            background: rgb(255 255 255 / 60%);
+            z-index: 3;
+            border-radius: 40;
+            font-size: 0.7rem;
+            backdrop-filter: blur(5px);
+        }
+
+        &__types {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px 0;
+
+            li {
+                margin: 0 5px;
+                padding: 8px 16px;
+                font-family: Montserrat, sans-serif;
+                color: v.$dark;
+                background: rgb(255 255 255 / 60%);
+                z-index: 3;
+                border-radius: 40;
+                font-size: 0.8rem;
+                backdrop-filter: blur(5px);
+                text-transform: capitalize;
+            }
+        }
+    }
+
+    .card__detail {
+
+        width: 100%;
+
+        .card__name {
+
+            font-family: v.$font-family;
+            font-size: 1.3em;
+            font-weight: 700;
+            color: #383838;
+            text-transform: capitalize;
+            mix-blend-mode: color-burn;
+            z-index: 3;
+            text-align: center;
+            position: relative;
+        }
+
+        .card__types {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            margin: 10px 0;
+            list-style-type: none;
+            padding: 0;
+
+            li {
+                padding: 8px 16px;
+                font-family: v.$font-family;
+                color: #383838;
+                background: rgba(255, 255, 255, 0.6);
+                z-index: 3;
+                border-radius: 13.3333333333px;
+                font-size: 0.8rem;
+                -webkit-backdrop-filter: blur(5px);
+                backdrop-filter: blur(5px);
+                text-transform: capitalize;
+            }
+
+        }
+    }
+
+    &[data-type="fairy"] {
+        .card__particle {
+            &:before {
+                background-color: #e69fb0;
+            }
+
+            &:after {
+                background-color: #ff8cd0;
+            }
+        }
+    }
+
+    &[data-type="psychic"] {
+        .card__particle {
+            &:before {
+                background-color: #9600f4;
+            }
+
+            &:after {
+                background-color: #64f4c0;
+            }
+        }
+    }
+
+    &[data-type="fighting"] {
+        .card__particle {
+            &:before {
+                background-color: #ffb46b;
+            }
+
+            &:after {
+                background-color: #bd6f22;
+            }
+        }
+    }
+
+    &[data-type="ground"],
+    &[data-type="rock"] {
+        .card__particle {
+            &:before {
+                background-color: #d2820e;
+            }
+
+            &:after {
+                background-color: #382203;
+            }
+        }
+    }
+
+    &[data-type="electric"] {
+        .card__particle {
+            &:before {
+                background-color: #ffd100;
+            }
+
+            &:after {
+                background-color: #b29200;
+            }
+        }
+    }
+
+    &[data-type="normal"] {
+        .card__particle {
+            &:before {
+                background-color: #f4eeb8;
+            }
+
+            &:after {
+                background-color: #c9cc99;
+            }
+        }
+    }
+
+    &[data-type="grass"] {
+        .card__particle {
+            &:before {
+                background-color: #67fc34;
+            }
+
+            &:after {
+                background-color: #20fca3;
+            }
+        }
+    }
+
+    &[data-type="dragon"] {
+        .card__particle {
+            &:before {
+                background-color: #fa6c14;
+            }
+
+            &:after {
+                background-color: #ffac13;
+            }
+        }
+    }
+
+    &[data-type="fire"] {
+        .card__particle {
+            &:before {
+                background-color: #ff2e16;
+            }
+
+            &:after {
+                background-color: #ff5c16;
+            }
+        }
+    }
+
+    &[data-type="water"] {
+        .card__particle {
+            &:before {
+                background-color: #08e3ff;
+            }
+
+            &:after {
+                background-color: #008aff;
+            }
+        }
+    }
+
+    &[data-type="poison"],
+    &[data-type="ghost"] {
+        .card__particle {
+            &:before {
+                background-color: #d49cfb;
+            }
+
+            &:after {
+                background-color: #40a595;
+            }
+        }
+    }
+
+    &[data-type="ice"] {
+        .card__particle {
+            &:before {
+                background-color: #00ecf4;
+            }
+
+            &:after {
+                background-color: #0270f4;
+            }
+        }
+    }
+
+    &[data-type="bug"] {
+        .card__particle {
+            &:before {
+                background-color: #77dc55;
+            }
+
+            &:after {
+                background-color: #f5ee83;
+            }
+        }
     }
 }
