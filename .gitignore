@@ -124,3 +124,6 @@ out
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+#Custom ignored folder or files
+public/build
