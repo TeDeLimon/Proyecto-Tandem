@@ -1,0 +1,2 @@
+const url="https://min-api.cryptocompare.com/data/top/mktcapfull?limit=10&tsym=USD",formulario=document.querySelector("#formulario"),selectMonedas=document.querySelector("select#moneda"),selectCriptos=document.querySelector("select#criptomonedas"),divResultado=document.querySelector("#resultado");async function iniciarAPP(){await obtenerCriptomonedas()}async function obtenerCriptomonedas(){}document.addEventListener("DOMContentLoaded",iniciarAPP);
+//# sourceMappingURL=app.js.map
