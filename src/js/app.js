@@ -1,11 +1,15 @@
 //Variables del documento JS
 const url = "https://min-api.cryptocompare.com/data/top/mktcapfull?limit=20&tsym=USD";
 
+/**
+ * Objeto con la información de la moneda y de la criptomoneda seleccionada
+ */
 const conversion = {
     moneda: null,
     criptomonedas: null
 }
 
+//Por defecto, las criptomonedas al principio son nulas
 let criptomonedas = null;
 
 //Selectores del documento
@@ -20,17 +24,21 @@ formulario.addEventListener('submit', realizarConversion);
 selectMonedas.addEventListener('change', modificarConversion);
 selectCriptos.addEventListener('change', modificarConversion);
 
+/**
+ * Función que controla el flujo principal de la aplicación
+ */
 async function iniciarAPP() {
 
     //Consultar las criptomonedas disponibles
     criptomonedas = await obtenerCriptomonedas();
 
+    //Si no existen criptomonedas detenemos la ejecución del código
     if (!criptomonedas) return;
 
-    //Procesar las criptomonedas
+    //Procesamos las criptomonedas
     const cryptos = procesarCriptomonedas();
 
-    //Incorporarlas al select de criptomonedas
+    //Incorporamos las criptomonedas al select de criptos
     agregarCriptomonedas(cryptos);
 }
 
@@ -45,8 +53,10 @@ async function obtenerCriptomonedas() {
 
     try {
 
+        //Esperamos la respuesta del servidor
         const respuesta = await fetch(url);
 
+        //Convertimos el resultado a JSON
         resultado = await respuesta.json();
 
     } catch (error) {
@@ -59,6 +69,11 @@ async function obtenerCriptomonedas() {
     }
 }
 
+/**
+ * Desestructura el objecto de criptomonedas obtenido en el resultado
+ * 
+ * @returns {Array} Array con las criptomonedas
+ */
 function procesarCriptomonedas() {
 
     const { Data: cryptos } = criptomonedas;
@@ -66,8 +81,14 @@ function procesarCriptomonedas() {
     return cryptos;
 }
 
+/**
+ * Añade dinámicamente las criptomonedas al select
+ * 
+ * @param {Array} cryptos Las criptomonedas
+ */
 function agregarCriptomonedas(cryptos) {
 
+    //Iteramos sobre cada criptomoneda generando un option que posteriormente es agregado
     cryptos.forEach(crypto => {
 
         const { Name, FullName } = crypto.CoinInfo;
@@ -79,6 +100,59 @@ function agregarCriptomonedas(cryptos) {
         selectCriptos.append(option);
     })
 }
+
+/**
+ * Función principal que se encarga de realizar la conversión
+ * 
+ * @param {Event} e El evento que sucede en el DOM
+ */
+function realizarConversion(e) {
+
+    e.preventDefault();
+
+    //Verificar que está seleccionado en ambos select alguna opción
+    if (!Object.values(conversion).every(value => value != null)) {
+        console.log("detengo la ejecución")
+        return;
+    }
+
+
+
+    //Necesitamos realizar una consulta para obtener el valor de la criptomoneda en la moneda seleccionada
+
+    //Mostrar el resultado
+
+}
+
+//const urlConvert = `https://min-api.cryptocompare.com/data/pricemultifull?fsyms=${criptomoneda}&tsysm${moneda}`;
+
+/**
+ * Función asociada al evento change, modifica el objecto conversión con el valor del option seleccionado
+ * @param {Event} Event El evento que sucede sobre el select
+ */
+function modificarConversion(Event) {
+    const { target } = Event;
+
+    //Desectruturar el objeto sobre el que se ejecuta el evento
+    const { selectedIndex, options, id } = target;
+
+    //Obteniendo el option seleccionado
+    const optionSeleccionado = options[selectedIndex];
+
+    //El valor del option
+    const value = optionSeleccionado.value;
+
+    //Dinámicamente aprovechamos que el ID coincide con el nombre de la propiedad del object conversion y actualizamos su valor
+    conversion[id] = value;
+}
+
+
+
+
+
+
+
+
 
 function ejemplosArrayMethods(cryptos) {
 
@@ -95,40 +169,4 @@ function ejemplosArrayMethods(cryptos) {
     const crytoimpares = cryptos.filter((crypto, index) => index % 2 == 0);
 
     console.log(crytoimpares);
-}
-
-function realizarConversion(e) {
-
-    e.preventDefault();
-
-    //Verificar que está seleccionado en ambos select alguna opción
-    if(!Object.values(conversion).every(value => value != null)) {
-        console.log("detengo la ejecución")
-        return;
-    }
-
-    
-
-    //Necesitamos realizar una consulta para obtener el valor de la criptomoneda en la moneda seleccionada
-
-    //Mostrar el resultado
-
-}
-
-//const urlConvert = `https://min-api.cryptocompare.com/data/pricemultifull?fsyms=${criptomoneda}&tsysm${moneda}`;
-
-function modificarConversion(Event) {
-    const { target } = Event;
-
-    //Desectruturar el objeto sobre el que se ejecuta el evento
-    const { selectedIndex, options, id } = target;
-
-    //Obteniendo el option seleccionado
-    const optionSeleccionado = options[selectedIndex];
-
-    //El valor del option
-    const value = optionSeleccionado.value;
-
-    //Dinámicamente aprovechamos que el ID coincide con el nombre de la propiedad del object conversion y actualizamos su valor
-    conversion[id] = value;
 }
