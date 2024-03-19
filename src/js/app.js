@@ -1,6 +1,8 @@
 //Variables del documento JS
 const url = "https://min-api.cryptocompare.com/data/top/mktcapfull?limit=20&tsym=USD";
 
+//const urlConvert = `https://min-api.cryptocompare.com/data/pricemultifull?fsyms=${criptomoneda}&tsysm${moneda}`;
+
 let criptomonedas = null;
 
 //Selectores del documento
