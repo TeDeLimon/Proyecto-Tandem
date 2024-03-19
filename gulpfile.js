@@ -34,7 +34,7 @@ const paths = {
     scss: 'src/scss/**/*.scss',
     css: 'src/css/**/*.css',
     js: 'src/js/**/*.js',
-    images: 'src/images/**/*',
+    images: 'src/img/**/*',
     videos: 'src/videos/**/*',
 }
 
