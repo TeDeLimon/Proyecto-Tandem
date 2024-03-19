@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,6 +15,7 @@
     <link href="build/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
 </head>
+
 <body>
 
     <div class="container">
@@ -25,31 +27,24 @@
                 <form id="formulario">
                     <div class="row">
                         <label>Elige tu Moneda</label>
-                        <select
-                            class="u-full-width"
-                            id="moneda"
-                            name="moneda"
-                        >
-                                <option value="">Elige tu moneda</option>
-                                <option value="USD">Dolar Estadounidense</option>
-                                <option value="MXN">Peso Mexicano</option>
-                                <option value="GBP">Libras</option>
-                                <option value="EUR">Euros</option>
+                        <select class="u-full-width" id="moneda" name="moneda">
+                            <option value="">Elige tu moneda</option>
+                            <option value="USD">Dolar Estadounidense</option>
+                            <option value="MXN">Peso Mexicano</option>
+                            <option value="GBP">Libras</option>
+                            <option value="EUR">Euros</option>
                         </select>
                     </div>
 
                     <div class="row">
-                    <div>
-                        <label>Elige tu Criptomoneda</label>
-                        <select 
-                            class="u-full-width"
-                            id="criptomonedas"
-                            name="criptomoneda"
-                        >
-                            <option value="">Elige tu criptomoneda</option>
-                        </select>
+                        <div>
+                            <label>Elige tu Criptomoneda</label>
+                            <select class="u-full-width" id="criptomonedas" name="criptomoneda">
+                                <option value="">Elige tu criptomoneda</option>
+                            </select>
+                        </div>
                     </div>
-                    </div>
+                    
                     <input class="button-primary u-full-width" type="submit" value="Cotizar" />
 
                     <div id="resultado" class="resultado"></div>
@@ -59,6 +54,7 @@
     </div>
 
     <script src="build/js/app.js"></script>
-    
+
 </body>
+
 </html>

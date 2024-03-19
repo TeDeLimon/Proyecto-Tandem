@@ -1,5 +1,5 @@
 //Variables del documento JS
-const url = "https://min-api.cryptocompare.com/data/top/mktcapfull?limit=10&tsym=USD";
+const url = "https://min-api.cryptocompare.com/data/top/mktcapfull?limit=20&tsym=USD";
 
 let criptomonedas = null;
 
@@ -11,6 +11,7 @@ const divResultado = document.querySelector("#resultado");
 
 //Event listeners
 document.addEventListener('DOMContentLoaded', iniciarAPP);
+formulario.addEventListener('submit', realizarConversion);
 
 async function iniciarAPP() {
 
@@ -22,14 +23,15 @@ async function iniciarAPP() {
     //Procesar las criptomonedas
     const cryptos = procesarCriptomonedas();
 
-    //ejemplosArrayMethods(cryptos);
-
     //Incorporarlas al select de criptomonedas
     agregarCriptomonedas(cryptos);
-
-    //Trabajar la lógica de la conversión
 }
 
+/**
+ * Realiza una petición asíncrona al servidor y retorna las criptomonedas
+ * 
+ * @returns {Array|null} Las criptomonedas obtenidas
+ */
 async function obtenerCriptomonedas() {
 
     let resultado = null;
@@ -58,18 +60,17 @@ function procesarCriptomonedas() {
 }
 
 function agregarCriptomonedas(cryptos) {
-    console.log(cryptos);
 
-    for (let i = 0; i < cryptos.length; i++) {
+    cryptos.forEach(crypto => {
 
-        const { Name, FullName } = cryptos[i].CoinInfo;
+        const { Name, FullName } = crypto.CoinInfo;
 
         const option = document.createElement('OPTION');
         option.value = Name;
         option.innerText = FullName;
 
         selectCriptos.append(option);
-    }
+    })
 }
 
 function ejemplosArrayMethods(cryptos) {
@@ -87,4 +88,27 @@ function ejemplosArrayMethods(cryptos) {
     const crytoimpares = cryptos.filter((crypto, index) => index % 2 == 0);
 
     console.log(crytoimpares);
+}
+
+function realizarConversion(e) {
+
+    e.preventDefault();
+
+    //Verificar que está seleccionado en ambos select alguna opción
+    const optionSeleccionado = selectMonedas.selectedOptions[0];
+
+    const { value } = optionSeleccionado;
+
+    console.log(value);
+
+    if (value === "") {
+        console.log("No has selecciona una opción");
+        return;
+    }
+
+
+    //Necesitamos realizar una consulta para obtener el valor de la criptomoneda en la moneda seleccionada
+
+    //Mostrar el resultado
+
 }
